@@ -3,11 +3,18 @@ const helmet = require('helmet');
 const xss = require('xss-clean');
 const compression = require('compression');
 const cors = require('cors');
-const Error = require('./utils/ErrorApi');
+const morgan = require('morgan');
 
+const config = require('./config/config');
+const Error = require('./utils/ErrorApi');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 
 const app = express();
+
+if (config.env !== 'test') {
+  app.use(morgan.successHandler);
+  app.use(morgan.errorHandler);
+}
 
 // security HTTP headers
 app.use(helmet());
