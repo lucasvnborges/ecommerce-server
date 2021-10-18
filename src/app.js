@@ -3,9 +3,11 @@ const helmet = require('helmet');
 const xss = require('xss-clean');
 const compression = require('compression');
 const cors = require('cors');
-const morgan = require('morgan');
+const httpStatus = require('http-status');
 
 const config = require('./config/config');
+const morgan = require('./config/morgan');
+const routes = require('./routes/v1');
 const Error = require('./utils/ErrorApi');
 const { errorConverter, errorHandler } = require('./middlewares/error');
 
@@ -29,6 +31,9 @@ app.use(compression());
 
 app.use(cors());
 app.options('*', cors());
+
+// v1 api routes
+app.use('/v1', routes);
 
 app.use(({ next }) => {
   next(new Error(httpStatus.NOT_FOUND, 'Content not found'));
