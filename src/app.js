@@ -4,6 +4,7 @@ const xss = require('xss-clean');
 const compression = require('compression');
 const cors = require('cors');
 const httpStatus = require('http-status');
+const passport = require('passport');
 
 const config = require('./config/config');
 const morgan = require('./config/morgan');
@@ -31,6 +32,9 @@ app.use(compression());
 
 app.use(cors());
 app.options('*', cors());
+
+// authentication
+app.use(passport.initialize());
 
 // v1 api routes
 app.use('/v1', routes);
