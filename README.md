@@ -1,4 +1,6 @@
 [![Contributors][contributors-shield]][contributors-url]
+![GitHub last commit](https://img.shields.io/github/last-commit/lucasnsborges/ecommerce-server)
+![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/lucasnsborges/ecommerce-server)
 
 <!-- PROJECT LOGO -->
 <br />
