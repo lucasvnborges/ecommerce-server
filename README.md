@@ -21,5 +21,5 @@
 
 1. <a href="https://github.com/lucasnsborges" target="_blank">Lucas Borges</a>
 
-[contributors-shield]: https://img.shields.io/github/contributors/othneildrew/Best-README-Template.svg?style=flat-square
+[contributors-shield]: https://img.shields.io/github/contributors/lucasnsborges/ecommerce-server?color=%231aa3be
 [contributors-url]: https://github.com/lucasnsborges/ecommerce-server/graphs/contributors
