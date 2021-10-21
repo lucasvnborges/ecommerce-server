@@ -1,0 +1,6 @@
+version: '3'
+
+services:
+  node-app:
+    container_name: dev-ecommerce-server
+    command: yarn dev -L

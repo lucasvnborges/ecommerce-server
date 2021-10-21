@@ -16,6 +16,11 @@
   </p>
 </p>
 
+## Construído com
+
+- [Express](https://expressjs.com/)
+- [Node.js](https://node.js.org/)
+- [Docker](https://www.docker.com/)
 
 <!-- Authors -->
 
