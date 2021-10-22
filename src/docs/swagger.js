@@ -1,5 +1,5 @@
-const { version } = require('../../package.json');
-const config = require('../config/config');
+const { version } = require('../../package.json')
+const config = require('../config/config')
 
 const swagger = {
   openapi: '3.0.0',
@@ -8,14 +8,14 @@ const swagger = {
     version,
     license: {
       name: '',
-      url: '',
-    },
+      url: ''
+    }
   },
   servers: [
     {
-      url: `http://localhost:${config.port}/v1`,
-    },
-  ],
-};
+      url: `http://localhost:${config.port}/v1`
+    }
+  ]
+}
 
-module.exports = swagger;
+module.exports = swagger
